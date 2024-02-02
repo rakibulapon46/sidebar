@@ -1,0 +1,154 @@
+:root {
+  --darkColor: #222;
+  --transition: all 0.5s linear;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1fcff;
+}
+
+h2 {
+  color: var(--darkColor);
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--darkColor);
+
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* sidebar area */
+.sidebar_area {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 435px;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: var(--transition);
+}
+
+/* toggle click to show sidebar */
+.show_sidebar {
+  transform: translateX(0);
+}
+
+/* sidebar header */
+.sidebar_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.sidebar_header h2 {
+  color: #59b6e7;
+}
+
+/* sidebar toggle */
+.sidebar_toggle {
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #59b6e7;
+  position: fixed;
+  right: 30px;
+  top: 25px;
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.sidebar_toggle:hover {
+  color: var(--darkColor);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* sidebar close */
+.sidebar_close {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: crimson;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.sidebar_close:hover {
+  transform: rotate(360deg);
+}
+
+
+/* links */
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.links li a {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  display: block;
+}
+
+.links li {
+  padding: 15px 20px;
+}
+
+.links li:hover {
+  background-color: #e8edf1;
+}
+/* social links */
+.social_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social_links li a {
+  color: #59b6e7;
+}
+.social_links li a:hover {
+  color: var(--darkColor);
+}
+
+@media only screen and (max-width: 576px) {
+  .sidebar_area {
+    max-width: 100%;
+  }
+}

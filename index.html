@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidebar</title>
-    <link rel="shortcut icon" href="./img/sidebar.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-
-
-
+    <link rel="shortcut icon" href="./img/sidebar.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/59531f5a28.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button class="sidebar_toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <aside>
+      <div class="sidebar_area">
+        <!-- aside header  -->
+        <div class="sidebar_header">
+          <h2>sidebar</h2>
+          <button class="sidebar_close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+        <!-- socials links -->
+        <ul class="social_links">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-sketch"></i></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
 
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
