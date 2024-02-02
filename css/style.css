@@ -37,17 +37,17 @@ a {
 
 /* sidebar area */
 .sidebar_area {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    padding: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    max-width: 435px;
-    width: 100%;
-    position: fixed;
-    height: 100%;
-    transform: translateX(-100%);
-    transition: var(--transition);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 435px;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: var(--transition);
 }
 
 /* toggle click to show sidebar */
@@ -110,7 +110,6 @@ a {
 .sidebar_close:hover {
   transform: rotate(360deg);
 }
-
 
 /* links */
 .links {
